@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FAQ Accordion</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <main class="page">
+    <div class="card">
+      <div class="card__header">
+        <img
+          src="icon-star.svg"
+          alt=""
+          class="card__star"
+          width="40"
+          height="41"
+          aria-hidden="true"
+        />
+        <h1 class="card__title">FAQs</h1>
+      </div>
+
+      <div class="accordion" role="list">
+
+        <!-- Item 1 -->
+        <div class="accordion__item" role="listitem">
+          <button
+            class="accordion__trigger"
+            aria-expanded="true"
+            aria-controls="answer-1"
+            id="question-1"
+          >
+            <span class="accordion__question">What is Frontend Mentor, and how will it help me?</span>
+            <span class="accordion__icon" aria-hidden="true">
+              <img src="icon-minus.svg" class="icon-minus" alt="" width="30" height="31" />
+              <img src="icon-plus.svg"  class="icon-plus"  alt="" width="30" height="31" />
+            </span>
+          </button>
+          <div
+            class="accordion__panel"
+            id="answer-1"
+            role="region"
+            aria-labelledby="question-1"
+          >
+            <p class="accordion__answer">
+              Frontend Mentor offers realistic coding challenges to help developers improve their
+              frontend coding skills with projects in HTML, CSS, and JavaScript. It's suitable
+              for all levels and ideal for portfolio building.
+            </p>
+          </div>
+        </div>
+
+        <!-- Item 2 -->
+        <div class="accordion__item" role="listitem">
+          <button
+            class="accordion__trigger"
+            aria-expanded="false"
+            aria-controls="answer-2"
+            id="question-2"
+          >
+            <span class="accordion__question">Is Frontend Mentor free?</span>
+            <span class="accordion__icon" aria-hidden="true">
+              <img src="icon-minus.svg" class="icon-minus" alt="" width="30" height="31" />
+              <img src="icon-plus.svg"  class="icon-plus"  alt="" width="30" height="31" />
+            </span>
+          </button>
+          <div
+            class="accordion__panel"
+            id="answer-2"
+            role="region"
+            aria-labelledby="question-2"
+          >
+            <p class="accordion__answer">
+              Yes, Frontend Mentor offers both free and premium coding challenges, with the free
+              tier giving access to a large selection of projects. Premium plans unlock additional
+              design files, Figma assets, and more.
+            </p>
+          </div>
+        </div>
+
+        <!-- Item 3 -->
+        <div class="accordion__item" role="listitem">
+          <button
+            class="accordion__trigger"
+            aria-expanded="false"
+            aria-controls="answer-3"
+            id="question-3"
+          >
+            <span class="accordion__question">Can I use Frontend Mentor projects in my portfolio?</span>
+            <span class="accordion__icon" aria-hidden="true">
+              <img src="icon-minus.svg" class="icon-minus" alt="" width="30" height="31" />
+              <img src="icon-plus.svg"  class="icon-plus"  alt="" width="30" height="31" />
+            </span>
+          </button>
+          <div
+            class="accordion__panel"
+            id="answer-3"
+            role="region"
+            aria-labelledby="question-3"
+          >
+            <p class="accordion__answer">
+              Yes, you can use completed Frontend Mentor challenges in your portfolio. We encourage
+              developers to showcase their solutions and share them with the community. Just make
+              sure to credit Frontend Mentor as the source of the challenge.
+            </p>
+          </div>
+        </div>
+
+        <!-- Item 4 -->
+        <div class="accordion__item" role="listitem">
+          <button
+            class="accordion__trigger"
+            aria-expanded="false"
+            aria-controls="answer-4"
+            id="question-4"
+          >
+            <span class="accordion__question">How can I get help if I'm stuck on a challenge?</span>
+            <span class="accordion__icon" aria-hidden="true">
+              <img src="icon-minus.svg" class="icon-minus" alt="" width="30" height="31" />
+              <img src="icon-plus.svg"  class="icon-plus"  alt="" width="30" height="31" />
+            </span>
+          </button>
+          <div
+            class="accordion__panel"
+            id="answer-4"
+            role="region"
+            aria-labelledby="question-4"
+          >
+            <p class="accordion__answer">
+              The best place to get help is inside Frontend Mentor's Discord community. There's a
+              help channel where you can ask questions and seek support from other community members.
+            </p>
+          </div>
+        </div>
+
+      </div><!-- /.accordion -->
+    </div><!-- /.card -->
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
